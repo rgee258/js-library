@@ -1,0 +1,156 @@
+/* General and Group Styling */
+
+body {
+  background-image: url("../images/wood.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: rgba(255,255,255,0.7);
+}
+
+.top header {
+  font-size: 1.5em;
+  font-family: 'Poiret One', cursive;
+}
+
+.book-btn, .book-btns, #new-book-form {
+  font-family: 'Varela Round', sans-serif;
+}
+
+/* Form */
+
+#new-book-form {
+  padding-bottom: 2%;
+}
+
+#new-book-form label {
+  margin-left: 10px;
+}
+
+#new-book-form .form-btn {
+  margin-left: 20px;
+}
+
+/* Displaying the forms */
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/* Book Button */
+
+.book-btn {
+  padding: 7px;
+  margin-bottom: 2%;
+  border-radius: 5px;
+  color: white;
+  font-variant: small-caps;
+  background-color: maroon;
+}
+
+.book-btn:hover {
+  cursor: pointer;
+  background-color: #4d0000;
+}
+
+/* Library container for books */
+
+.library {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Book styling */
+
+.book {
+  flex-basis: 23%;
+  width: 100%;
+  margin-top: 2%;
+  text-align: center;
+  color: goldenrod;
+  font-family: 'Kalam', cursive;
+  background-image: url("../images/book-cover.png");
+  background-position: left top;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.book-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  /* Here we already set book-content to position: relative */
+  /* to position the book buttons, but since auto will */
+  /* center the content according to the image, we add */
+  /* left: -10px in order to center the contents away */
+  /* from the actual center */
+  left: -10px;
+  font-size: 1em;
+  word-break: break-all;
+  font-variant: small-caps;
+}
+
+.book-author {
+  margin-bottom: 20%;
+  font-size: 1.2em;
+}
+
+.book-pages {
+  margin: 0;
+}
+
+.book-read {
+  margin-bottom: 40%;
+  margin-top: 0%;
+}
+
+.book-btns {
+  position: absolute;
+  bottom: 10%;
+}
+
+.book-btns div {
+  display: inline-block;
+  padding: 7px;
+  border-radius: 5px;
+  font-size: .7em;
+  color: white;
+  font-variant: small-caps;
+  background-color: royalblue;
+}
+
+.book-btns div:hover {
+  cursor: pointer;
+  background-color: mediumblue;
+}
+
+.remove {
+  margin-right: 10px;
+}
