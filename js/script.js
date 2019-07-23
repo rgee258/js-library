@@ -167,6 +167,9 @@ function getLibrary() {
   if (storageAvailable('localStorage')) {
     myLibrary = JSON.parse(localStorage.getItem('myLibrary'));
   }
+  else {
+    myLibrary = [];
+  }
 }
 
 // Run when DOM loads
