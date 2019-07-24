@@ -35,7 +35,7 @@ function addBook() {
   let bookRead = document.querySelector('input[name="read"]:checked').value;
   const newBook = new Book(bookId, bookTitle, bookAuthor, bookPages, bookRead);
   myLibrary.push(newBook);
-  setLibrary();
+  //setLibrary();
   hideForm();
   render();
 }
@@ -49,7 +49,7 @@ function removeBook(id) {
   beforeBook = myLibrary.slice(0, id);
   afterBook = myLibrary.slice(id + 1);
   myLibrary = beforeBook.concat(afterBook);
-  setLibrary();
+  //setLibrary();
   render();
 }
 
