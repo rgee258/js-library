@@ -1,5 +1,8 @@
 let myLibrary = [];
 
+/*
+// Old code using constructors and prototypes
+//
 // Book Constructor
 function Book(id, title, author, pages, read) {
   this.id = id,
@@ -23,6 +26,32 @@ Book.prototype.update = function() {
     this.read = "Read";
   }
   render();
+}
+*/
+
+// Book class
+class Book {
+  constructor(id, title, author, pages, read) {
+    this.id = id;
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  }
+
+  info() {
+    return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`;
+  }
+
+  update() {
+    if (this.read === "Read") {
+    this.read = "Unread";
+    }
+    else {
+      this.read = "Read";
+    }
+    render();
+  }
 }
 
 function addBook() {
