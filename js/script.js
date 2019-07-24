@@ -156,6 +156,7 @@ function storageAvailable(type) {
     }
 }
 
+/*
 function setLibrary() {
   if (storageAvailable('localStorage')) {
     console.log("Library set");
@@ -171,10 +172,11 @@ function getLibrary() {
     myLibrary = [];
   }
 }
+*/
 
 // Run when DOM loads
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  getLibrary();
+  //getLibrary();
   render();
 });
